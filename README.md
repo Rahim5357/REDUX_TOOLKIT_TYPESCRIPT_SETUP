@@ -26,11 +26,6 @@ Generates a standardized set of Redux action type constants dynamically using a 
 ```ts
 export const configsAction = ActionTypesFactory("configs");
 
-CONFIGS_REQUEST
-CONFIGS_SUCCESS
-CONFIGS_FAILED
-CONFIGS_RESET
-CONFIGS_STORE
 
 
 
@@ -69,5 +64,9 @@ Each generated reducer manages the following states:
   data: any;
   error: string | null;
 }
+
+
+
+
 
 
