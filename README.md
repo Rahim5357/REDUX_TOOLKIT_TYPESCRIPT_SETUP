@@ -29,6 +29,7 @@ Example Usage
 export const configsAction = ActionTypesFactory("configs");
 
 Generated Action Types
+
 CONFIGS_REQUEST
 CONFIGS_SUCCESS
 CONFIGS_FAILED
