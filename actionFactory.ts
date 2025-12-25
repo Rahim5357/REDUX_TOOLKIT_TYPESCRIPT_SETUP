@@ -19,12 +19,9 @@ export const ActionTypesFactory = (actionName: string) => {
 
 
 // Import the ActionTypesFactory utility
-// Used to generate a common set of Redux action types
 import { ActionTypesFactory } from "../../../utils/actionFactory";
 
-// Generate a common (reusable) set of action types
-// Useful when the same action structure is shared across multiple modules
+// Generate action types specifically for the "configs" module/API
 // This will create:
-// NAME_REQUEST, NAME_SUCCESS, NAME_FAILED, NAME_RESET, NAME_STORE
-export const nameAction = ActionTypesFactory("name");
-
+// CONFIGS_REQUEST, CONFIGS_SUCCESS, CONFIGS_FAILED, CONFIGS_RESET, CONFIGS_STORE
+export const configsAction = ActionTypesFactory("configs");
