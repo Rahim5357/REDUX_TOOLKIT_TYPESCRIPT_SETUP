@@ -32,3 +32,42 @@ CONFIGS_FAILED
 CONFIGS_RESET
 CONFIGS_STORE
 
+
+
+## 🧱 Reducer Factory (`reducerFactory.ts`)
+
+The `reducerFactory` is a reusable utility built on top of **Redux Toolkit’s `createSlice`**.  
+It dynamically generates reducers and actions for handling common asynchronous API states.
+
+---
+
+### 🎯 Purpose
+
+- Standardize reducer logic for API-driven state
+- Eliminate repetitive boilerplate across features
+- Enforce consistent state shape and behavior
+
+---
+
+### 🛠 What It Handles
+
+Each generated reducer manages the following states:
+
+- **REQUEST** → Starts loading, clears errors  
+- **SUCCESS** → Stores API response, stops loading  
+- **FAILED** → Stores error information  
+- **RESET** → Resets state to initial values  
+- **STORE** → Stores data without triggering loading  
+
+---
+
+### 📦 State Structure
+
+```ts
+{
+  loading: boolean;
+  data: any;
+  error: string | null;
+}
+
+
