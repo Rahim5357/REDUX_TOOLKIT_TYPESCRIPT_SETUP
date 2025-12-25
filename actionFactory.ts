@@ -10,5 +10,5 @@ export const ActionTypesFactory = (actionName: string) => {
   };
 };
 
-
+import { ActionTypesFactory } from "../../../utils/actionFactory";
 export const configsAction = ActionTypesFactory("configs");
