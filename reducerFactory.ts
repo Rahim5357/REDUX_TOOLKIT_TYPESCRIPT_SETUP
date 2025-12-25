@@ -69,25 +69,25 @@ export const reducerFactory = (
 import { reducerFactory } from "../../../utils/reducerFactory";
 
 // Import action types generated using ActionTypesFactory
-import { nameAction } from "./action";
+import { configsAction } from "./action";
 
 // Create a slice for the "configs" module using the factory
-const nameSlice = reducerFactory("configs", nameAction);
+const configsSlice = reducerFactory("configs", configsAction);
 
 // Export all generated actions in a common object
 // Makes it easier to reuse across sagas, components, or thunks
 export const commonAction = {
-  ...nameSlice.actions,
+  ...configsSlice.actions,
 };
 
 // Export reducer in a structured format
 // Helpful when combining multiple reducers dynamically
 export const commonReducer = {
-  name: nameSlice.reducer,
+  name: configsSlice.reducer,
 };
 
 // Destructure and export specific actions for direct usage
 export const {
-  NAME_REQUEST,
-  NAME_RESET,
+  CONFIGS_REQUEST,
+  CONFIGS_RESET,
 } = commonAction;
