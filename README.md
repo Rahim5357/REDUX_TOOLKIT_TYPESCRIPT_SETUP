@@ -25,3 +25,10 @@ Generates a standardized set of Redux action type constants dynamically using a 
 ### Example Usage
 ```ts
 export const configsAction = ActionTypesFactory("configs");
+
+CONFIGS_REQUEST
+CONFIGS_SUCCESS
+CONFIGS_FAILED
+CONFIGS_RESET
+CONFIGS_STORE
+
